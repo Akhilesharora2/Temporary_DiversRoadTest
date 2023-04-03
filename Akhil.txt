@@ -1,0 +1,6 @@
+// Remember to include this line into server package.json to before production
+ "build:prod": "npm install",
+
+//Run the command mentioned below during developement in order to generate a unique version for 
+//cached static assets/ otherwise changes wont be reflected
+    "build": "webpack --mode production && node generate-version.js"
